@@ -1,57 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SpeedOCR Studio — Privacy Policy</title>
-<style>
-body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; color: #1a1a2e; line-height: 1.6; }
-h1 { color: #ee9b00; }
-h2 { color: #ee9b00; margin-top: 32px; }
-a { color: #ee9b00; }
-.updated { color: #666; font-size: 14px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedOCR Studio — Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+            color: #d8d8e8;
+            line-height: 1.7;
+            background: #0a0a0f;
+            background-image:
+                radial-gradient(ellipse at 0% 0%, rgba(238, 155, 0, 0.06), transparent 50%),
+                radial-gradient(ellipse at 100% 100%, rgba(244, 162, 97, 0.04), transparent 50%);
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ee9b00, #f4a261, #ee9b00);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 6s ease-in-out infinite;
+            margin-bottom: 8px;
+        }
+
+        @keyframes shimmer {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        h2 {
+            color: #ee9b00;
+            margin-top: 40px;
+            margin-bottom: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h2::before {
+            content: '';
+            width: 3px;
+            height: 20px;
+            background: linear-gradient(180deg, #ee9b00, #f4a261);
+            border-radius: 2px;
+        }
+
+        a {
+            color: #f4a261;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #ee9b00;
+        }
+
+        .updated {
+            color: #6a6a85;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            margin: 12px 0 20px 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #f4f4ff;
+        }
+
+        code {
+            background: rgba(238, 155, 0, 0.1);
+            color: #f4a261;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-family: "SF Mono", "Menlo", monospace;
+        }
+
+        .section {
+            background: linear-gradient(135deg, rgba(26, 26, 37, 0.6), rgba(14, 14, 22, 0.6));
+            border: 1px solid rgba(238, 155, 0, 0.15);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 16px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(238, 155, 0, 0.3), transparent);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: linear-gradient(135deg, rgba(238, 155, 0, 0.15), rgba(244, 162, 97, 0.08));
+            border: 1px solid rgba(238, 155, 0, 0.3);
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #ee9b00;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+    </style>
 </head>
+
 <body>
-<h1>SpeedOCR Studio — Privacy Policy</h1>
-<p class="updated">Last updated: September 2025</p>
+    <h1>SpeedOCR Studio — Privacy Policy</h1>
+    <p class="updated">Last updated: September 2025</p>
 
-<h2>Overview</h2>
-<p>SpeedOCR Studio is a privacy-focused OCR tool. <strong>All text recognition happens on your Mac.</strong> Your screen captures, documents, and extracted text never leave your device.</p>
+    <div class="badge">On-Device OCR · No Cloud · No Tracking</div>
 
-<h2>Data We Access</h2>
-<ul>
-<li><strong>Screen Recording:</strong> SpeedOCR captures screen regions you select for OCR text extraction. Captures are temporary and processed immediately.</li>
-<li><strong>Camera:</strong> Used for document scanning. Camera input is processed on-device.</li>
-<li><strong>Microphone:</strong> Used for audio-to-text transcription features. Audio is processed locally.</li>
-<li><strong>Files:</strong> You can open and export documents. File access is user-initiated only.</li>
-</ul>
+    <h2>Overview</h2>
+    <p>SpeedOCR Studio is a privacy-focused OCR tool. <strong>All text recognition happens on your Mac.</strong> Your
+        screen captures, documents, and extracted text never leave your device.</p>
 
-<h2>Data We Do NOT Collect</h2>
-<ul>
-<li>We do not collect, transmit, or sell any personal data.</li>
-<li>No analytics or tracking.</li>
-<li>No cloud servers. No telemetry. No advertising SDKs.</li>
-<li>No account required. No login. No email.</li>
-</ul>
+    <h2>Data We Access</h2>
+    <div class="section">
+        <ul>
+            <li><strong>Screen Recording:</strong> SpeedOCR captures screen regions you select for OCR text extraction.
+                Captures are temporary and processed immediately.</li>
+            <li><strong>Camera:</strong> Used for document scanning. Camera input is processed on-device.</li>
+            <li><strong>Microphone:</strong> Used for audio-to-text transcription features. Audio is processed locally.
+            </li>
+            <li><strong>Files:</strong> You can open and export documents. File access is user-initiated only.</li>
+        </ul>
+    </div>
 
-<h2>On-Device Processing</h2>
-<p>All OCR and text recognition runs locally using macOS Vision framework. No images or text are sent to any external server.</p>
+    <h2>Data We Do NOT Collect</h2>
+    <div class="section">
+        <ul>
+            <li>We do not collect, transmit, or sell any personal data.</li>
+            <li>No analytics or tracking.</li>
+            <li>No cloud servers. No telemetry. No advertising SDKs.</li>
+            <li>No account required. No login. No email.</li>
+        </ul>
+    </div>
 
-<h2>Data Storage</h2>
-<ul>
-<li>Extracted text is stored locally and can be exported by you.</li>
-<li>No persistent storage of screen captures — they are discarded after OCR processing.</li>
-<li>You can clear all history from the app at any time.</li>
-</ul>
+    <h2>On-Device Processing</h2>
+    <div class="section">
+        <p>All OCR and text recognition runs locally using macOS Vision framework. No images or text are sent to any
+            external server.</p>
+    </div>
 
-<h2>In-App Purchases</h2>
-<p>SpeedOCR Studio offers Pro subscriptions (monthly, yearly, lifetime) via Apple's StoreKit. Payment is processed by Apple. We do not store or process any payment information.</p>
+    <h2>Data Storage</h2>
+    <div class="section">
+        <ul>
+            <li>Extracted text is stored locally and can be exported by you.</li>
+            <li>No persistent storage of screen captures — they are discarded after OCR processing.</li>
+            <li>You can clear all history from the app at any time.</li>
+        </ul>
+    </div>
 
-<h2>Children's Privacy</h2>
-<p>SpeedOCR Studio is not intended for use by children under 13. We do not knowingly collect any data from children.</p>
+    <h2>In-App Purchases</h2>
+    <div class="section">
+        <p>SpeedOCR Studio offers Pro subscriptions (monthly, yearly, lifetime) via Apple's StoreKit. Payment is
+            processed by Apple. We do not store or process any payment information.</p>
+    </div>
 
-<h2>Contact</h2>
-<p>For privacy questions, contact: support@overandor.com</p>
+    <h2>Children's Privacy</h2>
+    <div class="section">
+        <p>SpeedOCR Studio is not intended for use by children under 13. We do not knowingly collect any data from
+            children.</p>
+    </div>
+
+    <h2>Contact</h2>
+    <p>For privacy questions, contact: <a href="mailto:support@overandor.com">support@overandor.com</a></p>
 </body>
+
 </html>
