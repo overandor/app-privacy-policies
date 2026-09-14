@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARCANA — Privacy Policy</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; color: #1a1a2e; line-height: 1.6; }
+h1 { color: #ee9b00; }
+h2 { color: #ee9b00; margin-top: 32px; }
+a { color: #ee9b00; }
+.updated { color: #666; font-size: 14px; }
+</style>
+</head>
+<body>
+<h1>ARCANA — Privacy Policy</h1>
+<p class="updated">Last updated: September 2025</p>
+
+<h2>Overview</h2>
+<p>ARCANA is a privacy-first iMessage analysis tool. <strong>All data processing happens locally on your Mac.</strong> Your messages, contacts, and analysis results never leave your device.</p>
+
+<h2>Data We Access</h2>
+<ul>
+<li><strong>iMessage database:</strong> ARCANA reads your local Messages database to import and analyze conversations. This data stays on your Mac.</li>
+<li><strong>Contacts:</strong> ARCANA accesses your Contacts to resolve phone numbers to names. Contact data is used locally for display only.</li>
+<li><strong>Microphone:</strong> Used for ATLAS Mediator voice input. Audio is processed locally and not recorded or stored.</li>
+<li><strong>Speech Recognition:</strong> Used for ATLAS voice-to-text. Recognition happens on-device.</li>
+<li><strong>Photos/Media:</strong> Message attachments are imported from the local iMessage attachment store for display within the app.</li>
+</ul>
+
+<h2>Data We Do NOT Collect</h2>
+<ul>
+<li>We do not collect, transmit, or sell any personal data.</li>
+<li>No analytics or tracking.</li>
+<li>No cloud servers. No telemetry. No advertising SDKs.</li>
+<li>No account required. No login. No email.</li>
+</ul>
+
+<h2>Local AI Processing</h2>
+<p>ARCANA includes a bundled local AI model (Ollama) for the ATLAS Mediator feature. All AI processing happens on your Mac's CPU/GPU. No conversation data is sent to any external server.</p>
+<p>If you optionally configure a cloud LLM provider (Groq, OpenRouter), message text may be sent to that provider for mediation responses. This is opt-in and requires manual API key configuration.</p>
+
+<h2>Data Storage</h2>
+<ul>
+<li>Imported messages are stored in a local SQLite database at <code>~/.arcana/</code>.</li>
+<li>Media attachments are cached locally at <code>~/.arcana/media/</code>.</li>
+<li>You can delete all data at any time by removing the <code>~/.arcana/</code> directory or using the in-app reset function.</li>
+</ul>
+
+<h2>In-App Purchases</h2>
+<p>ARCANA offers Pro subscriptions (monthly, yearly, lifetime) via Apple's StoreKit. Payment is processed by Apple. We do not store or process any payment information.</p>
+
+<h2>Children's Privacy</h2>
+<p>ARCANA is not intended for use by children under 13. We do not knowingly collect any data from children.</p>
+
+<h2>Your Rights</h2>
+<ul>
+<li>All data is local. You have full control and can delete it at any time.</li>
+<li>No data to export or request since nothing leaves your device.</li>
+<li>Uninstalling ARCANA removes the app. Use in-app reset to remove user data.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>For privacy questions, contact: support@overandor.com</p>
+</body>
+</html>
